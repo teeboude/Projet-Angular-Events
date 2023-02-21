@@ -9,20 +9,22 @@ import { FormAddEventComponent } from './components/form-add-event/form-add-even
 import {FormsModule} from "@angular/forms";
 import { AppRoutingModule } from './app-routing.module';
 import {RouterOutlet} from "@angular/router";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
     CalendarComponent,
     AddEventComponent,
-    FormAddEventComponent
+    FormAddEventComponent,
   ],
   imports: [
     HttpClientModule,
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    RouterOutlet
+    RouterOutlet,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
