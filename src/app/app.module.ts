@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CalendarComponent } from './components/calendar/calendar.component';
 import { AddEventComponent } from './components/add-event/add-event.component';
 import { FormAddEventComponent } from './components/form-add-event/form-add-event.component'
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormAddEventComponent } from './components/form-add-event/form-add-even
   ],
   imports: [
     HttpClientModule,
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

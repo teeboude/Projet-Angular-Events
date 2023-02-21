@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {AddEventComponent} from "../add-event/add-event.component";
+import {Event} from "../../models/event"
 
 @Component({
   selector: 'app-form-add-event',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class FormAddEventComponent {
 
+  types = ["Routine","Repas","Travail","Loisir"];
+
+  submitted = false;
+  event: any;
+
+  onSubmit() { this.submitted = true; }
 }

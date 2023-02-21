@@ -15,6 +15,6 @@ export class EventsService {
   }
 
   createEvent(createEvent:any): Observable<void> {
-    return this.http.post<void>('http://localhost:3000/events', createEvent);
+    return this.http.post<void>('http://localhost:3000/events/add', createEvent);
   }
 }
