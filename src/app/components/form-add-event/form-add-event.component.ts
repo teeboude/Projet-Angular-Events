@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {AddEventComponent} from "../add-event/add-event.component";
+
 import {Event} from "../../models/event"
 
 @Component({
@@ -15,4 +15,5 @@ export class FormAddEventComponent {
   event: any;
 
   onSubmit() { this.submitted = true; }
+
 }

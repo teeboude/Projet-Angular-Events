@@ -29,7 +29,7 @@
                 required
                 [(ngModel)]="event.type" name="type"
                 #type="ngModel">
-          <option *ngFor="let type of types" [value]="type">{{type}}</option>
+          <option *ngFor="let typ of types" [value]="typ">{{typ}}</option>
         </select>
         <div [hidden]="type.valid || type.pristine" class="alert alert-danger">
           Le type est requis
@@ -37,7 +37,7 @@
       </div>
 
       <button type="submit" class="btn btn-success" [disabled]="!eventForm.form.valid">Ajouter</button>
-      
+
     </form>
   </div>
 </div>
