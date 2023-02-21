@@ -11,10 +11,6 @@ export class EventsService {
   constructor(private http:HttpClient) { }
 
   fetchEvents(): Observable<Event[]> {
-    return this.http.get<Event[]>('http://localhost:3000/events')
-  }
-
-  createEvent(createProduct: any): Observable<void> {
-    return this.http.post<void>('http://localhost:3000/events', createProduct);
+    return this.http.get<Event[]>("http://localhost:3000/events")
   }
 }
