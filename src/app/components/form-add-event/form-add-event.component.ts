@@ -9,7 +9,7 @@ import {Event} from "../../models/event"
 })
 export class FormAddEventComponent {
 
-  types = ["Routine","Repas","Travail","Loisir"];
+  typesList = ["Routine","Repas","Travail","Loisir"];
 
   submitted = false;
   event: any;

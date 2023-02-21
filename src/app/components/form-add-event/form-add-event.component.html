@@ -29,7 +29,7 @@
                 required
                 [(ngModel)]="event.type" name="type"
                 #type="ngModel">
-          <option *ngFor="let typ of types" [value]="typ">{{typ}}</option>
+          <option *ngFor="let type of typesList" [value]="type">{{type}}</option>
         </select>
         <div [hidden]="type.valid || type.pristine" class="alert alert-danger">
           Le type est requis
