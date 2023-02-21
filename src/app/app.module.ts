@@ -7,6 +7,8 @@ import { CalendarComponent } from './components/calendar/calendar.component';
 import { AddEventComponent } from './components/add-event/add-event.component';
 import { FormAddEventComponent } from './components/form-add-event/form-add-event.component'
 import {FormsModule} from "@angular/forms";
+import { AppRoutingModule } from './app-routing.module';
+import {RouterOutlet} from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import {FormsModule} from "@angular/forms";
   imports: [
     HttpClientModule,
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule,
+    RouterOutlet
   ],
   providers: [],
   bootstrap: [AppComponent]
