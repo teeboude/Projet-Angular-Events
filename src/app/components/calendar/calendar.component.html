@@ -1,12 +1,14 @@
 <h2>Mon calendrier</h2>
 
+
+
 <ul class="calendar">
   <li *ngFor="let event of events">
     <button type="button">
       <span class="badge">{{event.id}}</span>
       <span class="name">{{event.title}}</span>
-      <span class="time">{{event.time}}</span>
-      <span class="type">{{event.type}}</span>
+      <span class="name">{{event.time}}</span>
+      <span class="name">{{event.type}}</span>
     </button>
   </li>
 </ul>
